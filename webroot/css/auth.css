@@ -1,0 +1,350 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/grocery-market-system/img/back.jpg');
+}
+
+.login-container {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);        
+}
+
+.login-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.login-container input.login-input {
+    width: 100%;       
+    max-width: 400px; 
+
+}
+.login-input.username {
+    background-image: url('/grocery-market-system/img/profile.png'); 
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+}
+
+.login-input.password {
+    background-image: url('/grocery-market-system/img/pass.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"] {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}
+
+.login-container .btn-login {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;     
+    max-width: 300px; 
+    padding: 14px 0;   
+    border-radius: 30px;
+    margin: 0 auto;  
+    transition: 0.3s all;
+    display: inline-block; 
+
+}
+
+.login-container .btn-login:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+.login-container .links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-container .links a {
+    color: #27ae60;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.login-container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.login-container .links a:hover {
+    color: #219150;
+}
+
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+        width: 90%;
+    }
+}
+
+
+.register-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.register-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.register-container input.register-input {
+    width: 100%;       
+    max-width: 400px; 
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 29px 29px;
+}
+
+.register-input.username {
+    background-image: url('/grocery-market-system/img/profile.png'); 
+}
+.register-input.password {
+    background-image: url('/grocery-market-system/img/pass.png');
+}
+.register-input.phone {
+    background-image: url('/grocery-market-system/img/phone.png');
+}
+.register-container input:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+}
+.register-input.address {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: left;         
+    vertical-align: top;     
+    resize: none;            
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-input.address::placeholder {
+    text-align: center;   
+    margin-top: 90px;  
+    line-height: 70px;
+}
+
+.register-input.address:focus {
+    outline: none;
+    border-color: #27ae60;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+
+}
+.register-container .btn-login {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;     
+    max-width: 300px; 
+    padding: 14px 0;   
+    border-radius: 30px;
+    margin: 0 auto;  
+    transition: 0.3s all;
+    display: inline-block; 
+    margin-top: 20px;
+}
+
+.register-container .btn-login:hover {
+    background: #2ecc71;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+.register-container .links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;   
+}
+
+.register-container .links a {
+    color: #27ae60;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.register-container p {
+    font-size: 14px;       
+    color: #555;          
+    margin-top: 20px;      
+    margin-bottom: 10px;  
+    text-align: center;   
+}
+
+.register-container .links a:hover {
+    color: #219150;
+}
+
+.flash-overlay {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.flash-overlay .message {
+    background: rgba(39, 174, 96, 0.8);
+    border: 1px solid rgba(60, 208, 121, 0.5);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    animation: slideDown 0.5s ease;
+    text-align: center;
+}
+
+.flash-overlay .message.error {
+    background: rgba(231, 76, 60, 0.8);
+    border-color: rgba(231, 76, 60, 0.5);
+    text-align: center;
+}
+
+.flash-overlay .message::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #2ecc71;
+    margin-top: 12px;
+    border-radius: 4px;
+    animation: loading 2.5s linear forwards;
+}
+
+@keyframes loading {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+    background-image: inherit !important;
+    background-position: 10px center !important;
+    background-repeat: no-repeat !important;
+    background-size: 29px 29px !important;
+}
+
+.error-message {
+    color: #e74c3c;    
+    font-size: 15px;
+    margin-top: -16px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+
+
+
