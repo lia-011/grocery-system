@@ -223,3 +223,73 @@ html, body {
 .add-to-cart:hover {
     background: #219150;
 }
+/* ===== ZUS-style add to cart panel ===== */
+
+.product-card {
+    position: relative;
+}
+
+/* panel hidden by default */
+.cart-panel {
+    margin-top: 12px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    display: none;
+}
+
+/* show panel when button focused */
+.product-card:focus-within .cart-panel {
+    display: block;
+}
+
+/* quantity control */
+.qty-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.qty-control button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #27ae60;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.qty-control span {
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* action buttons */
+.cart-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.cart-actions button {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-add {
+    background: #27ae60;
+    color: #fff;
+}
+
+.btn-buy {
+    background: #000;
+    color: #fff;
+}

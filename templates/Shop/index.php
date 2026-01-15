@@ -81,6 +81,7 @@
                 ['name' => 'Tea', 'price' => 4.00, 'desc' => 'Refreshing herbal tea.', 'image' => 'tea.jpg'],
                 ['name' => 'Muffin', 'price' => 2.50, 'desc' => 'Chocolate muffin.', 'image' => 'muffin.jpg'],
                 ['name' => 'Cereal', 'price' => 3.20, 'desc' => 'Healthy breakfast cereal.', 'image' => 'cereal.jpg']
+                
             ];
             ?>
             <?php foreach ($products as $product): ?>
@@ -90,6 +91,36 @@
                     <p class="price">$<?= h($product['price']) ?></p>
                     <p class="desc"><?= h($product['desc']) ?></p>
                     <button class="add-to-cart">🛒 Add to Cart</button>
+
+       
+
+<div class="cart-panel">
+    <div class="qty-control">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+    </div>
+
+    <div class="cart-actions">
+        <button class="btn-buy">Buy Now</button>
+    </div>
+</div>
+
+
+
+                   <div class="product-actions">
+
+    
+
+    <div class="qty-wrapper hidden">
+        <button class="qty-btn minus">−</button>
+        <span class="qty">1</span>
+        <button class="qty-btn plus">+</button>
+        <button class="buy-btn">Buy</button>
+    </div>
+
+</div>
+
                 </div>
             <?php endforeach; ?>
         </div>
@@ -98,3 +129,5 @@
 </div>
 
 <?= $this->Html->script('shop') ?>
+
+
